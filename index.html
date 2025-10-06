@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophie Klangworte - Freie Rednerin - Eure Geschichte, Eure Zeremonie</title>
+    
+    <!-- SEO: Optimierter Titel -->
+    <title>Traureden by Sophie | Freie Traurednerin & Trauerrednerin</title>
+    
+    <!-- SEO: Meta Beschreibung für Suchergebnisse -->
+    <meta name="description" content="Traureden by Sophie ist Ihre persönliche freie Traurednerin für unvergessliche Hochzeiten und Trauerrednerin für würdevolle Abschiede in Deutschland. Lassen Sie uns Ihre Geschichte erzählen.">
+    
+    <!-- SEO: Kanonische URL (Platzhalter anpassen!) -->
+    <link rel="canonical" href="https://IHRE-DOMAIN-HIER.de/" />
+
+    <!-- SEO: Open Graph Tags für Social Media Sharing -->
+    <meta property="og:title" content="Traureden by Sophie | Freie Traurednerin & Trauerrednerin" />
+    <meta property="og:description" content="Individuelle und herzliche Zeremonien, die eure einzigartige Geschichte erzählen." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop" />
+    <meta property="og:url" content="https://IHRE-DOMAIN-HIER.de/" />
+    <meta property="og:type" content="website" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- SEO: Strukturierte Daten (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Traureden by Sophie - Freie Rednerin",
+      "image": "https://images.unsplash.com/photo-1594744806289-44c5C5a0a349?q=80&w=1887&auto=format&fit=crop",
+      "description": "Individuelle und herzliche Zeremonien für freie Trauungen, Willkommensfeste und Trauerfeiern.",
+      "url": "https://IHRE-DOMAIN-HIER.de/",
+      "telephone": "+491234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
+      }
+    }
+    </script>
+    <script type="application/ld+json" id="faq-schema"></script>
+
+
     <style>
         /* Benutzerdefinierte Stile für eine elegante Typografie */
         body {
@@ -62,7 +98,7 @@
     <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-semibold text-beige-dark font-serif">Sophie Klangworte</a>
+                <a href="#" class="text-2xl font-semibold text-beige-dark font-serif">Traureden by Sophie</a>
                 <nav class="hidden md:flex space-x-8">
                     <a href="#about" class="text-stone-600 hover:text-beige-dark transition duration-300">Über Mich</a>
                     <a href="#services" class="text-stone-600 hover:text-beige-dark transition duration-300">Leistungen</a>
@@ -143,7 +179,7 @@
         <!-- Services Section -->
         <section id="services" class="py-24 bg-white fade-in-section">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-semibold text-stone-800 mb-4">Leistungen</h2>
+                <h2 id="services-title" class="text-3xl md:text-4xl font-semibold text-stone-800 mb-4"></h2>
                 <p id="services-subtitle" class="text-stone-600 mb-16 max-w-2xl mx-auto"></p>
                 <!-- Grid bricht jetzt früher auf Tablets um -->
                 <div id="services-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -233,16 +269,13 @@
     <!-- Footer -->
     <footer class="bg-white text-center py-10">
         <div class="container mx-auto px-6">
-             <a href="#" class="text-2xl font-semibold text-beige-dark font-serif mb-4 inline-block">Sophie Klangworte</a>
-             <div class="flex justify-center space-x-6 mb-6">
-                 <a href="#" class="text-stone-500 hover:text-beige-dark transition duration-300">
-                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                 </a>
-                 <a href="#" class="text-stone-500 hover:text-beige-dark transition duration-300">
+             <a href="#" class="text-2xl font-semibold text-beige-dark font-serif mb-4 inline-block">Traureden by Sophie</a>
+             <div class="flex justify-center mb-6">
+                 <a href="https://www.instagram.com/traureden_by_sophie/" target="_blank" rel="noopener noreferrer" class="text-stone-500 hover:text-beige-dark transition duration-300" aria-label="Instagram Profil von Traureden by Sophie">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427.465C9.793 2.013 10.147 2 12.315 2zm-1.161 2.893a6.116 6.116 0 00-2.106.447 3.12 3.12 0 00-1.14 1.14 6.116 6.116 0 00-.447 2.106c-.04 1.003-.053 1.328-.053 3.424s.013 2.421.053 3.424c.056.88.261 1.541.447 2.106.21.649.52 1.17.925 1.575.406.406.926.715 1.575.925.565.186 1.226.391 2.106.447 1.003.04 1.328.053 3.424.053s2.421-.013 3.424-.053c.88-.056 1.541-.261 2.106-.447a3.12 3.12 0 001.14-1.14 6.116 6.116 0 00.447-2.106c.04-1.003.053-1.328.053-3.424s-.013-2.421-.053-3.424a6.116 6.116 0 00-.447-2.106 3.12 3.12 0 00-1.14-1.14 6.116 6.116 0 00-2.106-.447c-1.003-.04-1.328-.053-3.424-.053s-2.421.013-3.424.053zM12 9.375a2.625 2.625 0 100 5.25 2.625 2.625 0 000-5.25zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" /></svg>
                  </a>
              </div>
-            <p class="text-sm text-stone-500">&copy; 2024 Sophie Klangworte. Alle Rechte vorbehalten. | <a href="impressum.html" class="underline hover:text-stone-700">Impressum</a></p>
+            <p class="text-sm text-stone-500">&copy; 2024 Traureden by Sophie. Alle Rechte vorbehalten. | <a href="impressum.html" class="underline hover:text-stone-700">Impressum</a></p>
         </div>
     </footer>
 
@@ -251,16 +284,20 @@
         const siteContent = {
             hero: {
                 subtitle: "Freie Rednerin mit Herz",
-                title: "Eure Liebe in Worte gefasst",
-                description: "Individuelle und herzliche Zeremonien, die eure einzigartige Geschichte erzählen."
+                // SEO: Titel optimiert
+                title: "Freie Trauungen & Zeremonien",
+                // SEO: Beschreibung optimiert
+                description: "Als freie Traurednerin gestalte ich persönliche und herzliche Zeremonien, die eure einzigartige Geschichte erzählen."
             },
             about: {
-                title: "Willkommen, ich bin Sophie",
+                // SEO: Titel optimiert
+                title: "Über Mich: Sophie, eure freie Rednerin",
                 p1: "Als freie Rednerin ist es meine größte Freude, eure Geschichten in den Mittelpunkt zu stellen. Worte sind meine Leidenschaft, und ich nutze sie, um persönliche, emotionale und unvergessliche Zeremonien zu gestalten – für die schönsten und die schwersten Momente des Lebens.",
                 p2: "Mit viel Einfühlungsvermögen, einer Prise Humor, wo er passt, und großer Sorgfalt sorge ich dafür, dass eure Zeremonie authentisch wird. Lasst uns gemeinsam diesen besonderen Moment kreieren."
             },
             services: {
-                title: "Leistungen",
+                // SEO: Titel optimiert
+                title: "Leistungen als freie Rednerin",
                 subtitle: "Für die Meilensteine des Lebens die richtigen Worte.",
                 items: [
                     { icon: "gem", title: "Freie Trauung", text: "Eine Zeremonie, die eure Persönlichkeit widerspiegelt. Frei von Konventionen, voller Emotionen und ganz auf euch zugeschnitten." },
@@ -281,7 +318,7 @@
             },
             testimonials: {
                 title: "Stimmen von Herzen",
-                subtitle: "Was meine Paare über unsere gemeinsame Reise sagen.",
+                subtitle: "Was Paare und Familien über unsere gemeinsame Reise sagen.",
                 items: [
                     { quote: "Sophie hat unsere Erwartungen übertroffen. Die Rede war so persönlich und emotional, dass kein Auge trocken blieb. Es war einfach perfekt!", name: "Anna & Markus", date: "Juli 2024" },
                     { quote: "Wir haben uns von Anfang an super aufgehoben gefühlt. Sophie ist so herzlich und hat unsere Geschichte wunderschön in Worte gefasst.", name: "Sophie & Tom", date: "Juni 2024" },
@@ -292,10 +329,10 @@
                 title: "Häufig gestellte Fragen",
                 subtitle: "Hier findest du Antworten auf die wichtigsten Fragen rund um eure Zeremonie.",
                 items: [
-                    { question: "Wie lange im Voraus sollten wir dich buchen?", answer: "Beliebte Termine, besonders an Wochenenden in den Sommermonaten, sind oft schon 12 bis 18 Monate im Voraus ausgebucht. Meldet euch also am besten so früh wie möglich, um euren Wunschtermin zu sichern. Bei Trauerfeiern bin ich selbstverständlich auch kurzfristig für euch da." },
-                    { question: "Wo arbeitest du überall?", answer: "Mein Herz schlägt für meine Heimatregion, aber ich liebe es auch zu reisen! Grundsätzlich bin ich in ganz Deutschland und auch im Ausland für euch da. Bei Zeremonien außerhalb eines bestimmten Radius fallen lediglich Anfahrts- und gegebenenfalls Übernachtungskosten an. Lasst uns einfach darüber sprechen!" },
-                    { question: "Lernst du uns vorher persönlich kennen?", answer: "Unbedingt! Ein unverbindliches Kennenlerngespräch (persönlich oder per Video) ist der erste und wichtigste Schritt. Die Chemie zwischen uns muss stimmen. Danach folgt unser ausführliches Gespräch, bei dem wir tief in die jeweilige Geschichte eintauchen. Nur so kann ich eine wirklich persönliche Rede für euch schreiben." },
-                    { question: "Was passiert, wenn du krank wirst?", answer: "Das ist die größte Sorge aller – und auch meine! Für diesen sehr unwahrscheinlichen Fall habe ich ein großes Netzwerk an wundervollen Kolleginnen und Kollegen. Ich würde alles daransetzen, einen passenden Ersatz für euch zu finden, der eure Zeremonie mit der von mir verfassten Rede hält." }
+                    { question: "Wie lange im Voraus sollten wir dich für eine freie Trauung buchen?", answer: "Beliebte Termine, besonders an Wochenenden in den Sommermonaten, sind oft schon 12 bis 18 Monate im Voraus ausgebucht. Meldet euch also am besten so früh wie möglich, um euren Wunschtermin zu sichern. Bei Trauerfeiern bin ich selbstverständlich auch kurzfristig für euch da." },
+                    { question: "Wo arbeitest du als freie Rednerin?", answer: "Mein Herz schlägt für meine Heimatregion, aber ich liebe es auch zu reisen! Grundsätzlich bin ich in ganz Deutschland und auch im Ausland für euch da. Bei Zeremonien außerhalb eines bestimmten Radius fallen lediglich Anfahrts- und gegebenenfalls Übernachtungskosten an. Lasst uns einfach darüber sprechen!" },
+                    { question: "Lernen wir dich vor der Zeremonie persönlich kennen?", answer: "Unbedingt! Ein unverbindliches Kennenlerngespräch (persönlich oder per Video) ist der erste und wichtigste Schritt. Die Chemie zwischen uns muss stimmen. Danach folgt unser ausführliches Gespräch, bei dem wir tief in die jeweilige Geschichte eintauchen. Nur so kann ich eine wirklich persönliche Rede für euch schreiben." },
+                    { question: "Was passiert, wenn du als Rednerin krank wirst?", answer: "Das ist die größte Sorge aller – und auch meine! Für diesen sehr unwahrscheinlichen Fall habe ich ein großes Netzwerk an wundervollen Kolleginnen und Kollegen. Ich würde alles daransetzen, einen passenden Ersatz für euch zu finden, der eure Zeremonie mit der von mir verfassten Rede hält." }
                 ]
             }
         };
@@ -309,6 +346,7 @@
             document.getElementById('about-title').textContent = content.about.title;
             document.getElementById('about-p1').textContent = content.about.p1;
             document.getElementById('about-p2').textContent = content.about.p2;
+            document.getElementById('services-title').textContent = content.services.title;
             document.getElementById('services-subtitle').textContent = content.services.subtitle;
             const servicesContainer = document.getElementById('services-container');
             servicesContainer.innerHTML = content.services.items.map(service => `
@@ -346,7 +384,6 @@
             document.getElementById('faq-title').textContent = content.faq.title;
             document.getElementById('faq-subtitle').textContent = content.faq.subtitle;
             const faqContainer = document.getElementById('faq-container');
-            // MODIFIED FAQ STRUCTURE
             faqContainer.innerHTML = content.faq.items.map(item => `
                 <div class="bg-white rounded-lg shadow-sm">
                     <button class="faq-question w-full flex justify-between items-center text-left p-6">
@@ -360,6 +397,21 @@
                     </div>
                 </div>
             `).join('');
+            
+            // SEO: Dynamisch das FAQ-Schema erstellen
+            const faqSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": content.faq.items.map(item => ({
+                    "@type": "Question",
+                    "name": item.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer
+                    }
+                }))
+            };
+            document.getElementById('faq-schema').textContent = JSON.stringify(faqSchema);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -421,4 +473,5 @@
 
 </body>
 </html>
+
 
